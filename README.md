@@ -10,8 +10,8 @@
 ## Setup
 1. Clone this repository:
 ```
-git clone https://github.com/FaiOnayq/week3-ML-baseline-system..git
-cd week3-ML-baseline-system.
+git clone https://github.com/FaiOnayq/week3-ML-baseline.git
+cd week3-ML-baseline
 ```
 2. Install dependencies:
 
