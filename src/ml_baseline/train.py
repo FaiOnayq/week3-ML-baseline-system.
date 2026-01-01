@@ -28,6 +28,10 @@ from .metrics import (
 from .pipeline import build_pipeline
 from .schema import InputSchema
 from .splits import group_split, random_split, time_split
+import warnings
+from sklearn.exceptions import UndefinedMetricWarning
+
+warnings.filterwarnings("ignore", category=UndefinedMetricWarning)
 
 log = logging.getLogger(__name__)
 

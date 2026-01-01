@@ -14,7 +14,7 @@ def random_split(
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
     y = df[target]
     strat = y if stratify else None
-    train, test = train_test_split(df, test_size=test_size, random_state=seed, stratify=strat)
+    train, test = train_test_split(df, test_size=test_size, random_state=seed, stratify=strat, shuffle=True)
     return train.reset_index(drop=True), test.reset_index(drop=True)
 
 
